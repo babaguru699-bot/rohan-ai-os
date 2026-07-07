@@ -1,10 +1,7 @@
-"""Session helpers for database access."""
-
 from app.database.database import SessionLocal
 
 
-def get_session():
-    """Yield a database session."""
+def get_db():
     db = SessionLocal()
     try:
         yield db
